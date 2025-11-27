@@ -1,0 +1,43 @@
+.card-index-green {
+    width: 290px;
+    height: 100px;
+    background-color: #198754;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-index-green.hovered {
+  transform: scale(1.02);
+  height: 120px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  position: relative;
+  background-color: transparent;
+  border: #198754 1px solid;
+  color: #198754;
+}
+
+.card-index-red {
+    width: 290px;
+    height: 100px;
+    background-color: #DC3545;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-index-red.hovered {
+  transform: scale(1.02);
+  height: 120px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  position: relative;
+  background-color: transparent;
+  border: #DC3545 1px solid;
+  color: #DC3545;
+}

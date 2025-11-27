@@ -1,0 +1,24 @@
+<div style="margin-top: 20px;" *ngFor="let transaction of transactionHistoryData, let i = index" (mouseenter)="onMouseEnter(i)" (mouseleave)="onMouseLeave(i)">
+    @if (transaction.type === 'CREDIT') {
+        <div class="card card-index-green" [class.hovered]="hoveredIndex === i" style="max-width: 18rem;">
+            <div class="card-header" style="font-size: 20px;">{{ transaction.type }}</div>
+            <div class="card-body">
+                <h5 class="card-title">+ ₹{{ transaction.amount }}</h5>
+                @if(hoveredIndex === i) {
+                    <p class="card-text" style="font-size: 15px;">BALANCE: {{ transaction.balance }}</p>
+                }
+            </div>
+        </div>
+    }
+    @if (transaction.type === 'DEBIT') {
+        <div class="card card-index-red" [class.hovered]="hoveredIndex === i" style="max-width: 18rem;">
+            <div class="card-header" style="font-size: 20px;">{{ transaction.type }}</div>
+            <div class="card-body">
+                <h5 class="card-title">- ₹{{ transaction.amount }}</h5>
+                @if(hoveredIndex === i) {
+                    <p class="card-text" style="font-size: 15px;">BALANCE: {{ transaction.balance }}</p>
+                }
+            </div>
+        </div>
+    }
+</div>

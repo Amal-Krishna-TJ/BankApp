@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, signal } from '@angular/core';
 
 @Component({
@@ -8,4 +9,7 @@ import { Component, signal } from '@angular/core';
 })
 export class App {
   protected readonly title = signal('Bank-App');
+
+  constructor(private http: HttpClient) {
+  }
 }

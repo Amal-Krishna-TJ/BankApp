@@ -1,0 +1,19 @@
+<form [formGroup]="loginForm" (ngSubmit)="login()" class="border">
+  <div class="mb-3 align">
+    <label for="exampleFormControlInput1" class="form-label">Account Number</label>
+    <input type="number" maxlength="10" max="9999999999" class="form-control length" id="exampleFormControlInput1" formControlName="accountNumber" required appNumericOnly>
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Name</label>
+    <input type="text" class="form-control length" id="exampleFormControlInput1" formControlName="name" required>
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Password</label>
+    <input type="password" class="form-control length" id="exampleFormControlInput1" formControlName="password" required>
+  </div>
+  <button type="submit" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" [disabled]="loginForm.invalid">Continue</button>
+  <div>
+    <br>
+    <p>No existing acount? <a routerLink="/auth/register" style="text-decoration: none;">Register here</a></p>
+  </div>
+</form>

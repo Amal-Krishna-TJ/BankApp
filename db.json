@@ -1,0 +1,126 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "accountNumber": 8352643655,
+      "name": "admin",
+      "password": "admin123",
+      "email": "admin@gmail.com",
+      "balance": 4500
+    },
+    {
+      "id": "2",
+      "accountNumber": 8738787485,
+      "name": "amal",
+      "password": "amal123",
+      "email": "amal@gmail.com",
+      "balance": 5000
+    },
+    {
+      "id": "3",
+      "accountNumber": 8375932858,
+      "name": "john",
+      "password": "john123",
+      "email": "john@gmail.com",
+      "balance": 3500
+    },
+    {
+      "id": "4",
+      "accountNumber": 8162435758,
+      "name": "philip",
+      "password": "philip123",
+      "email": "philip@gmail.com",
+      "balance": 6000
+    },
+    {
+      "id": "5",
+      "accountNumber": 8312982497,
+      "name": "vijay",
+      "password": "vijay123",
+      "email": "vijay@gmail.com",
+      "balance": 4000
+    },
+    {
+      "id": "6",
+      "accountNumber": 8123373758,
+      "name": "bijoy",
+      "password": "bijoy123",
+      "email": "bijoy@gmail.com",
+      "balance": 6500
+    },
+    {
+      "id": "7",
+      "accountNumber": 8236924644,
+      "name": "anagha",
+      "password": "anagha123",
+      "email": "anagha@gmail.com",
+      "balance": 7250
+    },
+    {
+      "id": "8",
+      "accountNumber": 8921697343,
+      "name": "adith",
+      "password": "adith123",
+      "email": "adith@gmail.com",
+      "balance": 10000
+    }
+  ],
+  "transactions": [
+    {
+      "id": "1",
+      "accountNumber": 8162435758,
+      "type": "CREDIT",
+      "amount": 200,
+      "balance": 6200,
+      "date": "2024-06-10T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "accountNumber": 8352643655,
+      "type": "CREDIT",
+      "amount": 500,
+      "balance": 4500,
+      "date": "2025-10-18T06:22:22.588Z"
+    },
+    {
+      "id": "3",
+      "accountNumber": 8312982497,
+      "type": "DEBIT",
+      "amount": 900,
+      "balance": 4000,
+      "date": "2025-10-18T06:31:43.705Z"
+    },
+    {
+      "id": "4",
+      "accountNumber": 8162435758,
+      "type": "CREDIT",
+      "amount": 50,
+      "balance": 6250,
+      "date": "2025-10-18T06:32:01.963Z"
+    },
+    {
+      "id": "5",
+      "accountNumber": 8352643655,
+      "type": "CREDIT",
+      "amount": 200,
+      "balance": 4700,
+      "date": "2025-10-18T08:03:55.790Z"
+    },
+    {
+      "id": "6",
+      "accountNumber": 8352643655,
+      "type": "DEBIT",
+      "amount": 200,
+      "balance": 4500,
+      "date": "2025-10-18T08:05:24.529Z"
+    },
+    {
+      "id": 7,
+      "accountNumber": 8162435758,
+      "type": "DEBIT",
+      "amount": 250,
+      "balance": 6000,
+      "date": "2025-10-22T03:35:19.190Z"
+    }
+  ]
+}

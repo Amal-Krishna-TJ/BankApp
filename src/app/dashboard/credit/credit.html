@@ -1,0 +1,9 @@
+<mat-card class="credit-card">
+  <form [formGroup]="creditForm" (ngSubmit)="onCredit()">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Credit Amount</label>
+      <input type="number" class="form-control" id="exampleFormControlInput1" formControlName="amount" required>
+    </div>
+    <button type="submit" class="btn btn-light" [disabled]="creditForm.invalid">Credit</button>
+  </form>
+</mat-card>

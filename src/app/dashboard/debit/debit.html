@@ -1,0 +1,9 @@
+<mat-card class="debit-card">
+  <form [formGroup]="debitForm" (ngSubmit)="onDebit()">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Debit Amount</label>
+      <input type="number" class="form-control" id="exampleFormControlInput1" formControlName="amount" required>
+    </div>
+    <button type="submit" class="btn btn-light" [disabled]="debitForm.invalid">Debit</button>
+  </form>
+</mat-card>

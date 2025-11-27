@@ -1,0 +1,38 @@
+<form [formGroup]="registerForm" (ngSubmit)="register()" class="border">
+  <div class="mb-3 align">
+    <label for="exampleFormControlInput1" class="form-label">Account Number</label>
+    <input type="number" maxlength="10" max="9999999999" class="form-control length" id="exampleFormControlInput1" formControlName="accountNumber" required appNumericOnly>
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Name</label>
+    <input type="text" class="form-control length" id="exampleFormControlInput1" formControlName="name" required>
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Password</label>
+    <input type="password" class="form-control length" id="exampleFormControlInput1" formControlName="password" required>
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email</label>
+    <input type="email" class="form-control length" id="exampleFormControlInput1" formControlName="email" required>
+  </div>
+  <button type="button" class="btn btn-light" (click)="popUp()" data-bs-toggle="modal" data-bs-target="#exampleModal" [disabled]="registerForm.invalid">Continue</button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <label for="exampleFormControlInput1" class="form-label">Balance Amount</label>
+        </div>
+        <div class="modal-body">
+          <input type="number" class="form-control" id="exampleFormControlInput1" formControlName="balance" appNumericOnly>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-light">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <br>
+    <p>Already have an existing acount? <a routerLink="/auth/login" style="text-decoration: none;">Login here</a></p>
+  </div>
+</form>
